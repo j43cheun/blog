@@ -13,7 +13,7 @@
     </template>
     <template #start>
       <b-navbar-item tag="router-link" :to="{ path: '/about' }">
-        About Me
+        About
       </b-navbar-item>
       <b-navbar-item tag="router-link" :to="{ path: '/projects' }">
         Projects
