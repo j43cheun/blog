@@ -2,7 +2,7 @@
   <div class="container">
     <section class="section">
       <h1 class="title">
-        My Projects 2
+        Projects
       </h1>
     </section>
     <section class="section">

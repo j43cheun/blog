@@ -1,5 +1,15 @@
 <template>
-  <div class="container">
-    <t>Hello World</t>
-  </div>
+  <Post :post="project" />
 </template>
+
+<script>
+export default {
+  async asyncData ({ $content, params }) {
+    const project = await $content('projects', params.slug).fetch()
+
+    return {
+      project
+    }
+  }
+}
+</script>
