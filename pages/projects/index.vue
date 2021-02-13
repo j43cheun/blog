@@ -12,7 +12,7 @@
             {{ tag }}
           </span>
         </div>
-        <nuxt-link :to="{ name: 'projects-slug', params: { slug: project.slug } }" class="is-size-5">
+        <nuxt-link :to="{ name: 'projects-slug', params: { slug: project.slug } }" class="is-size-4">
           {{ project.title }}
         </nuxt-link>
         <p class="subtitle is-6 mb-0">
