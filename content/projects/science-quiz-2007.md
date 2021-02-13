@@ -1,8 +1,10 @@
 ---
-title: Science Quiz 2007
-description: Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+title: "Science Quiz 2007"
+description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
 date: "2007-12-20T00:00:00-05:00"
-slug: science-quiz-2007
+slug: "science-quiz-2007"
+link: "https://github.com/j43cheun/ScienceQuiz2007"
+tags: [ "Turing" ]
 ---
 
 ## Introduction

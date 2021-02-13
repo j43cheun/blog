@@ -6,10 +6,26 @@
       </h1>
     </section>
     <section class="section">
-      <div v-for="project of projects" :key="project.slug">
-        <nuxt-link :to="{ name: 'projects-slug', params: { slug: project.slug } }">
-          <h2>{{ project.slug }}</h2>
+      <div v-for="project of projects" :key="project.slug" class="mb-6">
+        <div class="tags mb-0">
+          <span v-for="tag of project.tags" :key="tag" class="tag">
+            {{ tag }}
+          </span>
+        </div>
+        <nuxt-link :to="{ name: 'projects-slug', params: { slug: project.slug } }" class="is-size-5">
+          {{ project.title }}
         </nuxt-link>
+        <p class="subtitle is-6 mb-0">
+          {{ project.description }}
+        </p>
+        <Timestamp :created-at="project.date" class="mb-5" />
+        <b-button
+          tag="a"
+          :href="project.link"
+          icon-left="github"
+        >
+          GitHub
+        </b-button>
       </div>
     </section>
   </div>
