@@ -1,24 +1,18 @@
 ---
 title: "Science Quiz 2007"
-description: "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+description: "An very simple interactive science quiz program written in Turing."
 date: "2007-12-20T00:00:00-05:00"
 slug: "science-quiz-2007"
 link: "https://github.com/j43cheun/ScienceQuiz2007"
 tags: [ "Turing" ]
 ---
 
-## Introduction
+Science Quiz 2007 is a very simple interactive science quiz program written in
+the Turing programmimg language. The program uses imported JPEG images and WAV
+audio files to test users on basic concepts from ecology and chemistry from
+Grade 10 science. This program was written in order to satisfy the requirements
+of the summative for the Computer Engineering Technology course I took in 10th
+grade. The program is poorly written and has a lot of duplicated code because
+at the time, I wasn't aware that classes, functions, and loops were a thing 😳.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut aliquet lectus luctus consectetur ullamcorper. Quisque nec interdum massa, ut egestas quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula auctor tortor, vitae semper nulla vestibulum ut. Nam tristique at mi eget tempus. In dapibus ex eget nibh gravida, dapibus volutpat dui fringilla. Quisque ac lacinia libero, non auctor magna. Pellentesque eu lorem nec nisl eleifend bibendum id a massa.
-
-Fusce aliquet elementum vulputate. Maecenas viverra pellentesque facilisis. Quisque mattis pretium finibus. Vivamus nec maximus nunc, eu accumsan est. Fusce ut vestibulum eros. Etiam mollis diam eget metus vestibulum, vel auctor ligula blandit. Vivamus feugiat velit eget ligula eleifend malesuada. Aenean rhoncus turpis quis varius blandit.
-
-Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sit amet cursus sem, sit amet auctor mauris. Nulla condimentum venenatis neque ac aliquam. Suspendisse nulla massa, ullamcorper at tristique sed, venenatis nec urna. Integer id nisl at felis porta pharetra a et metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus sit amet arcu a erat semper bibendum.
-
-## How do I do this?
-
-Maecenas hendrerit orci quis mi lobortis suscipit. Donec cursus fermentum gravida. Suspendisse eu justo libero. Sed lobortis scelerisque enim. Ut luctus urna ac vestibulum ornare. Maecenas a suscipit est. Fusce tristique ultrices mauris, et porttitor urna sodales eget. Suspendisse potenti. Ut ut libero consequat, commodo dui eget, pellentesque felis.
-
-## I still don't understand
-
-Morbi aliquet velit ut feugiat fermentum. Praesent hendrerit scelerisque tellus, et lacinia ipsum consectetur in. Nulla suscipit tellus lobortis vestibulum mattis. Nulla pulvinar leo dolor, non scelerisque erat vestibulum vitae. Fusce vel diam tincidunt, fringilla lorem et, tincidunt tellus. Etiam vitae ultricies urna. Sed laoreet faucibus arcu nec pellentesque. Aliquam gravida arcu non diam volutpat, a condimentum mi porttitor. Morbi imperdiet est in nisi laoreet tempus. Etiam imperdiet malesuada diam, non gravida leo euismod id. Aliquam in tempus nisi. Etiam vel euismod metus, sit amet hendrerit augue. Nullam placerat augue risus, vel gravida mauris dictum id.
+<img class="mt-4" src="/projects/science-quiz-2007/img/title-screen.png">
