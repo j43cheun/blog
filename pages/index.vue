@@ -9,7 +9,7 @@
           Justin Cheung
         </p>
         <p class="subtitle">
-          Hi! I'm a software developer.
+          Software Developer/Amateur Photographer
         </p>
         <b-button tag="router-link" to="/about">
           About Me

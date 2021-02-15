@@ -1,14 +1,14 @@
 <template>
-  <Post :post="project" />
+  <Post :post="post" />
 </template>
 
 <script>
 export default {
   async asyncData ({ $content, params }) {
-    const project = await $content('projects', params.slug).fetch()
+    const post = await $content('projects', params.slug).fetch()
 
     return {
-      project
+      post
     }
   }
 }
