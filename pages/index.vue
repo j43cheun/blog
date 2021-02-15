@@ -11,10 +11,10 @@
         <p class="subtitle">
           Hi! I'm a software developer.
         </p>
-        <b-button tag="router-link" to="/about" type="is-link">
+        <b-button tag="router-link" to="/about">
           About Me
         </b-button>
-        <b-button tag="router-link" to="/projects" type="is-link">
+        <b-button tag="router-link" to="/projects">
           My Projects
         </b-button>
       </div>
