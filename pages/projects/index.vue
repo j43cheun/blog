@@ -29,7 +29,7 @@
 export default {
   async asyncData ({ $content, params }) {
     const projects = await $content('projects', params.slug)
-      .sortBy('createdAt', 'asc')
+      .sortBy('date', 'desc')
       .fetch()
 
     return {

@@ -1,9 +1,11 @@
 <template>
   <div class="container">
     <section class="section">
-      <span v-for="tag of post.tags" :key="tag" class="tag">
-        {{ tag }}
-      </span>
+      <div class="tags mb-0">
+        <span v-for="tag of post.tags" :key="tag" class="tag">
+          {{ tag }}
+        </span>
+      </div>
       <div>
         <h1 class="title">
           {{ post.title }}
