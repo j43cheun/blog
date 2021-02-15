@@ -1,12 +1,23 @@
 <template>
   <div class="container">
     <section class="section">
-      <h1 class="title">
-        {{ post.title }}
-      </h1>
-      <t class="is-size-7">
-        {{ formatDate(post.date) }} ⋅ Last Updated: {{ formatDateTime(post.updatedAt) }}
-      </t>
+      <span v-for="tag of post.tags" :key="tag" class="tag">
+        {{ tag }}
+      </span>
+      <div>
+        <h1 class="title">
+          {{ post.title }}
+        </h1>
+        <h2 class="subtitle">
+          {{ post.description }}
+        </h2>
+      </div>
+      <Timestamp :created-at="post.date" :updated-at="post.updatedAt" />
+      <github-button
+        v-if="post.github != null"
+        :href="post.github"
+        class="mt-5"
+      />
     </section>
     <section class="section content">
       <nuxt-content :document="post" />
@@ -15,7 +26,9 @@
 </template>
 
 <script>
+import GithubButton from './GithubButton.vue'
 export default {
+  components: { GithubButton },
   props: {
     post: {
       type: Object,

@@ -19,13 +19,7 @@
           {{ project.description }}
         </p>
         <Timestamp :created-at="project.date" class="mb-5" />
-        <b-button
-          tag="a"
-          :href="project.link"
-          icon-left="github"
-        >
-          GitHub
-        </b-button>
+        <github-button :href="project.github" />
       </div>
     </section>
   </div>
