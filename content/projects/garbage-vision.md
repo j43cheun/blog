@@ -4,7 +4,7 @@ description: "A very simple iOS app for identifying trash."
 date: "2020-12-25T01:06:08-08:00"
 slug: "garbage-vision"
 github: "https://github.com/j43cheun/GarbageVision.git"
-tags: [ "iOS", "Swift", "SwiftUI", "Core ML" ]
+tags: [ "iOS", "Swift", "SwiftUI", "Core ML", "Vision" ]
 ---
 
 Garbage Vision is a very simple iOS app that I wrote for identifying trash.
