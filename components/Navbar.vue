@@ -18,6 +18,9 @@
       <b-navbar-item tag="router-link" :to="{ path: '/projects' }">
         Projects
       </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ path: '/blog' }">
+        Blog
+      </b-navbar-item>
     </template>
   </b-navbar>
 </template>

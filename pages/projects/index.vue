@@ -6,20 +6,8 @@
       </h1>
     </section>
     <section class="section">
-      <div v-for="project of projects" :key="project.slug" class="mb-6">
-        <div class="tags mb-0">
-          <span v-for="tag of project.tags" :key="tag" class="tag">
-            {{ tag }}
-          </span>
-        </div>
-        <nuxt-link :to="{ name: 'projects-slug', params: { slug: project.slug } }" class="is-size-4">
-          {{ project.title }}
-        </nuxt-link>
-        <p class="subtitle is-6 mb-0">
-          {{ project.description }}
-        </p>
-        <Timestamp :created-at="project.date" class="mb-5" />
-        <github-button :href="project.github" />
+      <div v-for="post of posts" :key="post.slug" class="mb-6">
+        <Result :post="post" slug="projects-slug" />
       </div>
     </section>
   </div>
@@ -28,12 +16,12 @@
 <script>
 export default {
   async asyncData ({ $content, params }) {
-    const projects = await $content('projects', params.slug)
+    const posts = await $content('projects', params.slug)
       .sortBy('date', 'desc')
       .fetch()
 
     return {
-      projects
+      posts
     }
   }
 }
