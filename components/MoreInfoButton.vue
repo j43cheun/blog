@@ -3,8 +3,8 @@
     tag="a"
     :href="href"
     :size="size"
-    icon-left="link"
-    type="is-light"
+    icon-left="information-outline"
+    type="is-light is-info"
   >
     More Info
   </b-button>
