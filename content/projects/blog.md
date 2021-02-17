@@ -35,7 +35,7 @@ intuitive to use.
 
 <div class="columns mt-5">
   <div class="column is-2">
-    <img src="/projects/blog/img/blog-mobile.png">
+    <img src="/projects/blog/img/blog-mobile.PNG">
   </div>
   <div class="column">
     <img src="/projects/blog/img/blog-desktop.png">
