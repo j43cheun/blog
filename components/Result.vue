@@ -17,6 +17,13 @@
     <github-button
       v-if="post.github != null"
       :href="post.github"
+      size="is-small"
+      class="mt-2"
+    />
+    <more-info-button
+      v-if="post.info != null"
+      :href="post.info"
+      size="is-small"
       class="mt-2"
     />
   </div>
