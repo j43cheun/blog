@@ -20,6 +20,11 @@
         :href="post.github"
         class="mt-5"
       />
+      <more-info-button
+        v-if="post.info != null"
+        :href="post.info"
+        class="mt-5"
+      />
     </section>
     <section class="section content">
       <nuxt-content :document="post" />

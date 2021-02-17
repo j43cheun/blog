@@ -3,10 +3,10 @@
     tag="a"
     :href="href"
     :size="size"
-    icon-left="github"
-    type="is-light"
+    icon-left="information-outline"
+    type="is-light is-info"
   >
-    GitHub
+    More Info
   </b-button>
 </template>
 
