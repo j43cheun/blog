@@ -9,13 +9,13 @@
 </template>
 
 <script>
-  export default {
-    head() {
-      return {
-        title: 'Justin Cheung'
-      }
+export default {
+  head () {
+    return {
+      title: 'Justin Cheung'
     }
   }
+}
 </script>
 
 <style scoped>
