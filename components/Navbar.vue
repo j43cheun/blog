@@ -21,6 +21,9 @@
       <b-navbar-item tag="router-link" :to="{ path: '/blog' }">
         Blog
       </b-navbar-item>
+      <b-navbar-item tag="router-link" :to="{ path: '/gallery' }">
+        Gallery
+      </b-navbar-item>
     </template>
   </b-navbar>
 </template>
