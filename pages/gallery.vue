@@ -2,16 +2,19 @@
   <div class="container">
     <section class="section">
       <h1 class="title">
-        Photos
+        Gallery
       </h1>
     </section>
     <section class="section">
       <div class="columns is-multiline is-gapless">
-        <div v-for="(image, index) in images" :key="index" class="column is-mobile is-half-tablet is-one-third-widescreen">
+        <a v-for="(image, index) in images" :key="index" class="column is-mobile is-half-tablet is-one-third-widescreen" @click="launchModal(index)">
           <b-image :src="image.src" />
-        </div>
+        </a>
       </div>
     </section>
+    <b-modal v-model="isActive">
+      <b-image :src="images[activeIndex].src" />
+    </b-modal>
   </div>
 </template>
 
@@ -19,6 +22,8 @@
 export default {
   data () {
     return {
+      isActive: false,
+      activeIndex: 0,
       images: [
         {
           src: '/photos/seattle_amazon_spheres_exterior.JPG'
@@ -67,9 +72,21 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    launchModal (activeIndex) {
+      this.isActive = true
+      this.activeIndex = activeIndex
+    }
   }
 }
 </script>
 
 <style>
+a .image img {
+  filter: grayscale(100%);
+}
+a .image img:hover {
+  filter: grayscale(0%);
+}
 </style>
