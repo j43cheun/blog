@@ -33,11 +33,15 @@ were also considered. In particular, I felt [Vuetify](https://vuetifyjs.com/)
 was too rigid and I felt [Bootstrap-Vue](https://bootstrap-vue.org) was not
 intuitive to use.
 
-<div class="columns mt-5">
-  <div class="column is-2">
-    <img src="/projects/blog/img/blog-mobile.PNG">
-  </div>
-  <div class="column">
-    <img src="/projects/blog/img/blog-desktop.png">
+<div class="tile is-ancestor mt-5">
+  <div class="tile is-vertical">
+    <div class="tile">
+      <div class="tile is-parent is-3">
+        <img src="/projects/blog/img/blog-mobile.PNG">
+      </div>
+      <div class="tile is-parent">
+        <img src="/projects/blog/img/blog-desktop.png">
+      </div>
+    </div>
   </div>
 </div>
