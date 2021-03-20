@@ -62,6 +62,6 @@ export default {
   },
 
   googleAnalytics: {
-    id: 'UA-192607951-1'
+    id: 'TODO'
   }
 }
