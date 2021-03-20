@@ -9,7 +9,7 @@
           Justin Cheung
         </p>
         <p class="subtitle">
-          Software Developer/Amateur Photographer
+          Software Developer / Amateur Photographer
         </p>
         <b-button tag="router-link" to="/about" type="is-light">
           About Me
