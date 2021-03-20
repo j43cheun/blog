@@ -8,16 +8,6 @@
   </div>
 </template>
 
-<script>
-export default {
-  head () {
-    return {
-      title: 'Justin Cheung'
-    }
-  }
-}
-</script>
-
 <style scoped>
   .site-container {
     display: flex;

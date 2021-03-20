@@ -23,6 +23,11 @@ export default {
     return {
       posts
     }
+  },
+  head () {
+    return {
+      title: 'My Projects - Justin Cheung'
+    }
   }
 }
 </script>
