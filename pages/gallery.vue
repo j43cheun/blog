@@ -73,6 +73,11 @@ export default {
       ]
     }
   },
+  head () {
+    return {
+      title: 'Gallery - Justin Cheung'
+    }
+  },
   methods: {
     launchModal (activeIndex) {
       this.isActive = true

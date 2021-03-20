@@ -21,3 +21,13 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  head () {
+    return {
+      title: 'Justin Cheung'
+    }
+  }
+}
+</script>

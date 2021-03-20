@@ -10,6 +10,11 @@ export default {
     return {
       post
     }
+  },
+  head () {
+    return {
+      title: this.post.title
+    }
   }
 }
 </script>

@@ -23,6 +23,11 @@ export default {
     return {
       posts
     }
+  },
+  head () {
+    return {
+      title: 'Blog - Justin Cheung'
+    }
   }
 }
 </script>
