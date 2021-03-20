@@ -1,4 +1,7 @@
+import getRoutes from "./utils/getRoutes";
+
 export default {
+
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
@@ -40,13 +43,20 @@ export default {
     // https://go.nuxtjs.dev/buefy
     'nuxt-buefy',
     // https://go.nuxtjs.dev/content
-    '@nuxt/content'
+    '@nuxt/content',
+    '@nuxtjs/sitemap'
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {},
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
+  build: {},
+
+  sitemap: {
+    hostname: process.env.BASE_URL || 'https://j43cheun.github.io',
+    routes () {
+      return getRoutes()
+    }
   }
 }
