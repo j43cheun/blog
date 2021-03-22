@@ -1,5 +1,5 @@
 <template>
-  <b-navbar spaced>
+  <b-navbar centered spaced>
     <template #brand>
       <b-navbar-item tag="router-link" :to="{ path: '/' }">
         <strong>Justin Cheung</strong>

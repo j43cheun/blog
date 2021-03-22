@@ -4,7 +4,9 @@
     :href="href"
     :size="size"
     icon-left="github"
-    type="is-light"
+    :type="type"
+    rounded
+    :outlined="outlined"
   >
     GitHub
   </b-button>
@@ -21,6 +23,16 @@ export default {
       type: String,
       required: false,
       default: 'is-default'
+    },
+    type: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    outlined: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }

@@ -1,23 +1,26 @@
 <template>
-  <section class="hero is-halfheight">
+  <section class="hero is-fullheight is-dark">
+    <div class="hero-head">
+      <Navbar />
+    </div>
     <div class="hero-body">
       <div class="container has-text-centered">
-        <figure class="image container is-128x128 mb-6">
-          <img src="~/assets/png/pikachu.png">
-        </figure>
         <p class="title">
           Justin Cheung
         </p>
         <p class="subtitle">
           Software Developer / Amateur Photographer
         </p>
-        <b-button tag="router-link" to="/about" type="is-light">
+        <b-button tag="router-link" to="/about" type="is-white" outlined rounded>
           About Me
         </b-button>
-        <b-button tag="router-link" to="/projects" type="is-light">
+        <b-button tag="router-link" to="/projects" type="is-white" outlined rounded>
           My Projects
         </b-button>
       </div>
+    </div>
+    <div class="hero-footer">
+      <Footer />
     </div>
   </section>
 </template>
@@ -31,3 +34,15 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.hero {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/gallery/seattle_amazon_spheres_exterior.JPG');
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  background: transparent;
+}
+</style>

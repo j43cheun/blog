@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="tags mb-0">
-      <span v-for="tag of post.tags" :key="tag" class="tag">
+      <span v-for="tag of post.tags" :key="tag" class="tag is-rounded">
         {{ tag }}
       </span>
     </div>

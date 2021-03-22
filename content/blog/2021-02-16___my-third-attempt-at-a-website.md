@@ -3,6 +3,7 @@ title: "My third attempt at a website"
 slug: "2021-02-16___my-third-attempt-at-a-website"
 date: "2021-02-16T00:00:00-08:00"
 tags: [ "Meta" ]
+image: "/gallery/redmond_construction.JPG"
 ---
 
 ## Attempt No. 1
