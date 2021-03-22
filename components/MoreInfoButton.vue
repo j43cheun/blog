@@ -4,7 +4,9 @@
     :href="href"
     :size="size"
     icon-left="information-outline"
-    type="is-light is-info"
+    :type="type"
+    :outlined="outlined"
+    rounded
   >
     More Info
   </b-button>
@@ -21,6 +23,16 @@ export default {
       type: String,
       required: false,
       default: 'is-default'
+    },
+    type: {
+      type: String,
+      required: false,
+      default: ''
+    },
+    outlined: {
+      type: Boolean,
+      required: false,
+      default: false
     }
   }
 }

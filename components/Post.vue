@@ -1,34 +1,48 @@
 <template>
-  <div class="container">
+  <div>
+    <section class="hero is-halfheight is-dark">
+      <div class="hero-head">
+        <Navbar />
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div class="tags mb-0">
+            <span v-for="tag of post.tags" :key="tag" class="tag is-white is-rounded">
+              {{ tag }}
+            </span>
+          </div>
+          <div>
+            <h1 class="title">
+              {{ post.title }}
+            </h1>
+            <h2 class="subtitle">
+              {{ post.description }}
+            </h2>
+          </div>
+          <Timestamp :created-at="post.date" :updated-at="post.updatedAt" />
+          <github-button
+            v-if="post.github != null"
+            :href="post.github"
+            class="mt-5"
+            type="is-white"
+            outlined
+          />
+          <more-info-button
+            v-if="post.info != null"
+            :href="post.info"
+            class="mt-5"
+          />
+        </div>
+      </div>
+    </section>
     <section class="section">
-      <div class="tags mb-0">
-        <span v-for="tag of post.tags" :key="tag" class="tag">
-          {{ tag }}
-        </span>
+      <div class="container">
+        <div class="content">
+          <nuxt-content :document="post" />
+        </div>
       </div>
-      <div>
-        <h1 class="title">
-          {{ post.title }}
-        </h1>
-        <h2 class="subtitle">
-          {{ post.description }}
-        </h2>
-      </div>
-      <Timestamp :created-at="post.date" :updated-at="post.updatedAt" />
-      <github-button
-        v-if="post.github != null"
-        :href="post.github"
-        class="mt-5"
-      />
-      <more-info-button
-        v-if="post.info != null"
-        :href="post.info"
-        class="mt-5"
-      />
     </section>
-    <section class="section content">
-      <nuxt-content :document="post" />
-    </section>
+    <Footer />
   </div>
 </template>
 

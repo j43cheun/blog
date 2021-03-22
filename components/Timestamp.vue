@@ -25,7 +25,8 @@ export default {
       let formattedTimestamp = ''
 
       if (this.createdAt != null) {
-        formattedTimestamp += this.formatDate(this.createdAt)
+        formattedTimestamp += 'Posted on ' +
+                              this.formatDate(this.createdAt)
       }
 
       if (this.createdAt != null &&

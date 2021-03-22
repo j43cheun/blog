@@ -1,20 +1,32 @@
 <template>
-  <div class="container">
-    <section class="section">
-      <h1 class="title">
-        Gallery
-      </h1>
+  <div>
+    <section class="hero is-halfheight is-dark">
+      <div class="hero-head">
+        <Navbar />
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div>
+            <h1 class="title">
+              Gallery
+            </h1>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="section">
-      <div class="columns is-multiline is-gapless">
-        <a v-for="(image, index) in images" :key="index" class="column is-mobile is-half-tablet is-one-third-widescreen" @click="launchModal(index)">
-          <b-image :src="image.src" />
-        </a>
+      <div class="container">
+        <div class="columns is-multiline is-gapless">
+          <a v-for="(image, index) in images" :key="index" class="column is-mobile is-half-tablet is-one-third-widescreen" @click="launchModal(index)">
+            <b-image :src="image.src" />
+          </a>
+        </div>
       </div>
     </section>
     <b-modal v-model="isActive">
       <b-image :src="images[activeIndex].src" />
     </b-modal>
+    <Footer />
   </div>
 </template>
 

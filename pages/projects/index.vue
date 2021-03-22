@@ -1,15 +1,27 @@
 <template>
-  <div class="container">
-    <section class="section">
-      <h1 class="title">
-        My Projects
-      </h1>
-    </section>
-    <section class="section">
-      <div v-for="post of posts" :key="post.slug" class="mb-6">
-        <Result :post="post" slug="projects-slug" />
+  <div>
+    <section class="hero is-halfheight is-dark">
+      <div class="hero-head">
+        <Navbar />
+      </div>
+      <div class="hero-body">
+        <div class="container">
+          <div>
+            <h1 class="title">
+              My Projects
+            </h1>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="section">
+      <div class="container">
+        <div v-for="post of posts" :key="post.slug" class="mb-6">
+          <Result :post="post" slug="projects-slug" />
+        </div>
+      </div>
+    </section>
+    <Footer />
   </div>
 </template>
 
