@@ -1,5 +1,6 @@
 ---
 title: "About Me"
+image: "/gallery/marymoor_park_canada_goose.JPG"
 ---
 
 ## Hello!

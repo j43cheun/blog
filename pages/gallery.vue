@@ -99,10 +99,19 @@ export default {
 }
 </script>
 
+<style scoped>
+.hero {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/gallery/seattle_woodland_park_zoo_bird.JPG');
+  background-size: cover;
+  background-position: center;
+}
+</style>
+
 <style>
 a .image img {
   filter: grayscale(100%);
 }
+
 a .image img:hover {
   filter: grayscale(0%);
 }

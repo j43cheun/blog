@@ -43,3 +43,11 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.hero {
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/gallery/uw_campus_canada_goose.JPG');
+  background-size: cover;
+  background-position: center;
+}
+</style>

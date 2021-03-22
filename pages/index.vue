@@ -35,15 +35,9 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-@import "~bulma/sass/utilities/_all";
-@import "~bulma";
-@import "~buefy/src/scss/buefy";
-
-$footer-background-color: rgba(0, 0, 0, 0);
-
+<style scoped>
 .hero {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../static/gallery/seattle_amazon_spheres_exterior.JPG');
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/gallery/seattle_amazon_spheres_exterior.JPG');
   background-size: cover;
   background-position: center;
 }
@@ -51,5 +45,4 @@ $footer-background-color: rgba(0, 0, 0, 0);
 .footer {
   background: transparent;
 }
-
 </style>

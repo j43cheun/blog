@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="hero is-halfheight is-dark">
+    <section class="hero is-halfheight is-dark" :style="heroImage">
       <div class="hero-head">
         <Navbar />
       </div>
@@ -31,11 +31,13 @@
             v-if="post.info != null"
             :href="post.info"
             class="mt-5"
+            type="is-white"
+            outlined
           />
         </div>
       </div>
     </section>
-    <section class="section">
+    <section class="section content-section">
       <div class="container">
         <div class="content">
           <nuxt-content :document="post" />
@@ -54,6 +56,15 @@ export default {
     post: {
       type: Object,
       required: true
+    }
+  },
+  data () {
+    return {
+      heroImage: {
+        backgroundImage: this.post.image == null ? '' : `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${this.post.image})`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }
     }
   },
   methods: {
@@ -76,11 +87,14 @@ export default {
 </script>
 
 <style>
-  .icon.icon-link {
-    background-image: url('~assets/svg/hashtag.svg');
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-size: 20px 20px;
-  }
+.icon.icon-link {
+  background-image: url('~assets/svg/hashtag.svg');
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+}
+.content-section {
+  min-height: 30vh;
+}
 </style>
