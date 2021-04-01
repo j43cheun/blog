@@ -1,5 +1,6 @@
 ---
-title: "Quarantine Day 373"
+title: "A COVID-19 Quarantine Retrospective"
+description: "Quarantine Day 373"
 slug: "2021-03-14___quarantine-day-373"
 date: "2021-03-14T17:46:00-08:00"
 tags: [ "COVID-19 Quarantine Log" ]
