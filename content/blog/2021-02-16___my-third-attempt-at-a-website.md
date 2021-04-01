@@ -19,7 +19,7 @@ backend and [Bootstrap](https://getbootstrap.com) for its frontend). Armed with
 my lack of familiarity with HTML, CSS, and JavaScript, I ended up hacking
 together a hardcoded static portfolio website using [Semantic
 UI](https://semantic-ui.com) (because it looked "modern") and hosting it on
-[GitHub Pages](https://pages.github.com) (because it's free as in 🍺).
+[GitHub Pages](https://pages.github.com) (because it's free).
 
 <div class="columns mt-5">
   <div class="column">
