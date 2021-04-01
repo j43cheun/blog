@@ -102,8 +102,10 @@ export default {
 <style scoped>
 .hero {
   background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/gallery/seattle_woodland_park_zoo_bird.JPG');
+  background-attachment: fixed;
+  background-position: 50% 200%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 </style>
 

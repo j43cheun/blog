@@ -62,8 +62,10 @@ export default {
     return {
       heroImage: {
         backgroundImage: this.post.image == null ? '' : `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${this.post.image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundAttachment: 'fixed',
+        backgroundPosition: '50% 200%',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
       }
     }
   },
