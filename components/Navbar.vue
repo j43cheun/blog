@@ -10,6 +10,9 @@
       <b-navbar-item href="https://www.linkedin.com/in/ulongmax/">
         <b-icon icon="linkedin" />
       </b-navbar-item>
+      <b-navbar-item href="mailto: me@j43cheun.dev">
+        <b-icon icon="email" />
+      </b-navbar-item>
     </template>
     <template #end>
       <b-navbar-item tag="router-link" :to="{ path: '/about' }">
