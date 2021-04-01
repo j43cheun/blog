@@ -46,8 +46,10 @@ export default {
 
 <style scoped>
 .hero {
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/gallery/garbage_bin_embedded_system.jpg');
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('/gallery/garbage_bin_embedded_system.jpg');
+  background-attachment: fixed;
+  background-position: 50% 290%;
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 </style>

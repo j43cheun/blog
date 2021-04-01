@@ -61,9 +61,11 @@ export default {
   data () {
     return {
       heroImage: {
-        backgroundImage: this.post.image == null ? '' : `linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(${this.post.image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center'
+        backgroundImage: this.post.image == null ? '' : `linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url(${this.post.image})`,
+        backgroundAttachment: 'fixed',
+        backgroundPosition: '50% 200%',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover'
       }
     }
   },
@@ -87,12 +89,8 @@ export default {
 </script>
 
 <style>
-.icon.icon-link {
-  background-image: url('~assets/svg/hashtag.svg');
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: 20px 20px;
+.icon.icon-link:after {
+  content: '#';
 }
 .content-section {
   min-height: 30vh;
