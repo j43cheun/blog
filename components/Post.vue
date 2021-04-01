@@ -87,12 +87,8 @@ export default {
 </script>
 
 <style>
-.icon.icon-link {
-  background-image: url('~assets/svg/hashtag.svg');
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-  background-size: 20px 20px;
+.icon.icon-link:after {
+  content: '#';
 }
 .content-section {
   min-height: 30vh;
