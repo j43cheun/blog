@@ -47,9 +47,9 @@ export default {
 <style scoped>
 .hero {
   background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('/gallery/uw_campus_canada_goose.JPG');
-  background-attachment: fixed;
-  background-position: 50% 200%;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 </style>
