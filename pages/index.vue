@@ -27,6 +27,7 @@
 
 <script>
 export default {
+  layout: 'landing',
   head () {
     return {
       title: 'Justin Cheung'

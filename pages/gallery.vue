@@ -26,7 +26,6 @@
     <b-modal v-model="isActive">
       <b-image :src="images[activeIndex].src" />
     </b-modal>
-    <Footer />
   </div>
 </template>
 

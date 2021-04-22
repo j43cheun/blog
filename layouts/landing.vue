@@ -3,7 +3,6 @@
     <div class="site-content">
       <Nuxt />
     </div>
-    <Footer />
   </div>
 </template>
 
