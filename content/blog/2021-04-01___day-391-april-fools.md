@@ -1,7 +1,6 @@
 ---
-title: "April Fools 2021"
-description: "Quarantine Day 391"
-slug: "2021-04-01___april-fools-2021"
+title: "Day 391: April Fools"
+slug: "2021-04-01___day-391-april-fools"
 date: "2021-04-01T00:43:00-08:00"
 tags: [ "COVID-19 Quarantine Log" ]
 image: "/gallery/redmond_cherry_blossoms.JPG"

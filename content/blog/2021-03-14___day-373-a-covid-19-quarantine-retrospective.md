@@ -1,7 +1,6 @@
 ---
-title: "A COVID-19 Quarantine Retrospective"
-description: "Quarantine Day 373"
-slug: "2021-03-14___a-covid-19-quarantine-retrospective"
+title: "Day 373: A COVID-19 Quarantine Retrospective"
+slug: "2021-03-14___day-373-a-covid-19-quarantine-retrospective"
 date: "2021-03-14T17:46:00-08:00"
 tags: [ "COVID-19 Quarantine Log" ]
 image: "/gallery/sammamish_river_trail_duck.JPG"
