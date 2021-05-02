@@ -25,30 +25,13 @@ export default {
       let formattedTimestamp = ''
 
       if (this.createdAt != null) {
-        formattedTimestamp += 'Posted on ' +
-                              this.formatDate(this.createdAt)
-      }
-
-      if (this.createdAt != null &&
-          this.updatedAt != null) {
-        formattedTimestamp += ' ⋅ '
-      }
-
-      if (this.updatedAt != null) {
-        formattedTimestamp += 'Last Updated: ' +
-                              this.formatDateTime(this.updatedAt)
+        formattedTimestamp += this.formatDateTime(this.createdAt)
       }
 
       return formattedTimestamp
     }
   },
   methods: {
-    formatDate (dateTime) {
-      const date = new Date(dateTime)
-      const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
-
-      return date.toLocaleDateString('en-US', dateOptions)
-    },
     formatDateTime (dateTime) {
       const date = new Date(dateTime)
       const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
