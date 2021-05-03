@@ -38,7 +38,7 @@ export default {
 
 <style scoped>
 .hero {
-  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('/gallery/seattle_amazon_spheres_exterior.JPG');
+  background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url('/gallery/marymoor_park_canada_goose2.JPG');
   background-size: cover;
   background-position: center;
 }
