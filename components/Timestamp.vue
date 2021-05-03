@@ -34,10 +34,10 @@ export default {
   methods: {
     formatDateTime (dateTime) {
       const date = new Date(dateTime)
-      const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' }
+      const dateOptions = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
       const timeOptions = { timeZoneName: 'short' }
 
-      return date.toLocaleDateString('en-US', dateOptions) + ' ' +
+      return date.toLocaleDateString('en-US', dateOptions) + ', ' +
              date.toLocaleTimeString('en-US', timeOptions)
     }
   }
