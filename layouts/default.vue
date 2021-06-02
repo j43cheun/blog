@@ -27,7 +27,7 @@
 }
 </style>
 
-<style lang='scss' scoped>
+<style lang='scss'>
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Saira+Semi+Condensed&display=swap');
 
