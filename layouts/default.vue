@@ -26,3 +26,15 @@
   color: $black;
 }
 </style>
+
+<style lang='scss' scoped>
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Saira+Semi+Condensed&display=swap');
+
+$family-primary: 'Saira Semi Condensed';
+
+// Import Bulma and Buefy styles
+@import "~bulma/sass/utilities/_all";
+@import "~bulma";
+@import "~buefy/src/scss/buefy";
+</style>
