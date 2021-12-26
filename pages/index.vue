@@ -9,7 +9,7 @@
           Justin Cheung
         </p>
         <p class="subtitle">
-          Software Developer / Amateur Photographer
+          Software Developer / Goose Watcher
         </p>
         <b-button tag="router-link" to="/about" type="is-white" outlined rounded>
           About Me
